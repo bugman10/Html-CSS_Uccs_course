@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Showing the Debug Console for JavaScript in VS Code
+JavaScript Variable Declaration and Data Types
+JavaScript Operators
+JavaScript Arrays
+JavaScript Custom Functions
+JavaScript Objects
+JavaScript Conditionals
+JavaScript Loops
+Observing Document Object Model in the Elements Panel in Google Chrome Browser's DevTools
+JavaScript Events -->
+<button id="test">Hi</button>
+<script>
+let x = 1
+console.log(x)
+console.log(x+2)
+let people = ["Carter", "Jeff", "Pugguy"]
+document.querySelector('#test')
+
+function Say() 
+{
+    console.log("hi!")
+}
+let button = addEventListener('click', function() 
+{Say()}
+)
+
+
+let food = {
+    Main_corse: "Pork",
+    Desert: "Ice Cream",
+
+    quantity: 5,
+    Say_Menu() 
+    {
+        console.log("we have " + Main_corse + "and " + Desert)
+        if(quantity >= 7) 
+        {
+            console.log("we dont have dessert")
+        }
+    },
+    people() 
+    {
+       for(let i = 0;  i < people.length; i++){
+        console.log(people[i])
+       } 
+    }
+
+ 
+}
+
+</script>
+</body>
+</html>
