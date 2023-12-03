@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <button id="mine">Hi</button>
+
+
+    <div id="PeekABoo">Peek A Boo</div>
+    <!-- Remember to use ID! not CLASS! -->
+        
+    <div id="boxHolder" class="boxHolder">
+    <div id="box" class="box"></div>
+    </div>
+
+    <div class="hi"><p>hi</p></div>
+    <script>
+           $(document).ready(function(){
+       console.log("Loaded");
+       $('#PeekABoo').hide()
+    $('#mine').click(function(){
+        $('#PeekABoo').fadeIn(500)
+    })
+    $('#boxHolder' ).click(function(){ 
+        $('#box').slideToggle(500)
+    })
+    $('#boxHolder').animate({width: '101%'})
+    })
+
+    $('div.hi').has('p').css('color: 1px solid red').fadeIn
+
+    $('div.hi').hover(function(
+    
+    ){    $('div.hi').fadeIn}
+
+    )
+
+
+    </script>
+</body>
+</html>
